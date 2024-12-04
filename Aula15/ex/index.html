@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número</title>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="text"></div>
+
+    <script>
+        let numero = window.prompt('Digite um número:');
+        numero = Number(numero);
+        if (numero > 0 || numero < 0 || numero === 0) {
+            let divBlock = document.getElementById('text');
+            divBlock.innerHTML = `<h1>Seu número é ${numero}</h1>`;
+            divBlock.innerHTML += `<p>Raiz quadrada: <strong>${Math.sqrt(numero)}</strong></p>`;
+            divBlock.innerHTML += `<p><strong>${numero}</strong> é inteiro: <strong>${Number.isInteger(numero)}</strong></p>`;
+            divBlock.innerHTML += `<p>É NaN: <strong>${Number.isNaN(numero)}</strong></p>`;
+            divBlock.innerHTML += `<p>Arredondando para baixo: <strong>${Math.floor(numero)}</strong></p>`;
+            divBlock.innerHTML += `<p>Arredondando para Cima: <strong>${Math.ceil(numero)}</strong></p>`;
+            divBlock.innerHTML += `<p>Com duas casas decimais: <strong>${numero.toFixed(2)}</strong></p>`;
+        } else {
+            window.alert('DIGITE UM VALOR VALIDO!');
+        }
+    </script>
+</body>
+</html>
