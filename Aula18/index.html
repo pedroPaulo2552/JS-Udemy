@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        /*const pessoa1 = {
+            nome: 'Luiz',
+            sobrenome: 'Miranda',
+            idade: 25
+        };    
+        
+        console.log(pessoa1.sobrenome);*/
+
+        
+
+        /*const pessoa1 = criarPessoa('Pedro', 'Monteiro', 20);
+        console.log(pessoa1);*/
+
+        function criarPessoa(n, s, i) {
+            return {
+                nome: n,
+                sobrenome: s,
+                idade: i
+            };
+        }
+
+        /*const pessoas = [];
+        for (let c = 0; c<=2; c++) {
+            let nome = window.prompt(`Digite o nome da pessoa ${c}:`);
+            let sobrenome = window.prompt(`Digite o sobrenome da pessoa ${c}:`);
+            let idade = Number(window.prompt(`Digite a idade da pessoa ${c}:`));
+            pessoas[c] = criarPessoa(nome, sobrenome, idade);
+        }
+
+        for (let c in pessoas) {
+            console.log(pessoas[c]);
+        }*/
+
+        const pessoa1 = {
+            nome: 'Pedro',
+            idade: 20,
+
+            fala () {
+                console.log(`Eu me chamao ${this.nome} e tenho ${this.idade} anos`);  
+            },
+
+            incrementaIdade () {
+                this.idade++;
+            }
+        }
+
+        pessoa1.fala();
+        pessoa1.incrementaIdade();
+        pessoa1.fala();
+    </script>
+</body>
+</html>
