@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulario</h1>
+
+    <main>
+        <p class="par-inp">
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" class="inp" placeholder="ex: Fabio">
+        </p>
+        
+        <p class="par-inp">
+            <label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome" class="inp" placeholder="ex: Silva">
+        </p>
+        
+        <p class="par-inp">
+            <label for="ipeso">Peso:</label>
+            <input type="number" name="peso" id="ipeso" class="inp" placeholder="ex: 75.5">
+        </p>
+        
+        <p class="par-inp">
+            <label for="ialtura">Altura:</label>
+            <input type="number" name="altura" id="ialtura" class="inp" placeholder="ex:1.70">
+        </p>
+
+        <p class="par-inp">
+            <input type="button" value="Adicionar" id="add" class="btn">
+        </p>
+
+        <div id="div-resp"></div>
+    </main>
+    <script src="js.js"></script>
+</body>
+</html>
