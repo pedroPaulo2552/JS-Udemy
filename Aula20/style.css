@@ -18,16 +18,13 @@ h1 {
 
 main {
     background-color: white;
-    border: 1px solid black;
+    border: 2px solid black;
     width: 700px;
     border-radius: 10px;
     padding: 10px;
     margin: auto;
 }
 
-main:hover {
-    border: 2px solid black;
-}
 
 .par-inp {
     margin-bottom: 20px;
@@ -65,4 +62,8 @@ main:hover {
     padding: 10px;
     border: 1px solid rgba(0, 0, 0, 0.507);
     border-radius: 5px;
+}
+
+#div-resp p:hover {
+    border: 2px solid rgba(0, 0, 0, 0.562);
 }
