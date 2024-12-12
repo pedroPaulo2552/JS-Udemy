@@ -1,6 +1,7 @@
 let btnAdd = window.document.getElementById('add');
 let blockRes = window.document.getElementById('div-resp');
 let objCadastro;
+let pessoas = [];
 btnAdd.addEventListener('click', addPessoa);
 
 function addPessoa() {
@@ -20,6 +21,10 @@ function addPessoa() {
    validacao = validacaoNome(altura);
    if (validacao === false) {return}
 
+   if (pessoas.length > 0) {
+    
+   }
+
    objCadastro = criaCadastro(nome, sobrenome, peso, altura);
    mostrarCadastro();
 }
@@ -36,7 +41,7 @@ function validacaoNome(n) {
 
 
 function criaCadastro (n, s, p, a) {
-    return {
+    return{
         nome: n,
         sobrenome: s,
         peso: p,
@@ -47,4 +52,5 @@ function criaCadastro (n, s, p, a) {
 
 function mostrarCadastro() {
     blockRes.innerHTML += `<p><strong>${objCadastro.nome} ${objCadastro.sobrenome}</strong>, ${objCadastro.peso}KG, ${objCadastro.altura} altura, IMC: ${objCadastro.imc}</p>`
+    console.log(pessoas);
 }
