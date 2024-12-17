@@ -6,6 +6,7 @@ const corFundo = estilosBody.backgroundColor;
 console.log(corFundo);
 
 for (valor of ps) {
-    console.log(valor);
+    valor.style.backgroundColor = corFundo;
+    valor.style.color = 'white';
 }
 
